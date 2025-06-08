@@ -1,0 +1,43 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(160, 83, 96);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a{
+    position: relative;
+    right: 0;
+    font-size: 18px;
+    color:rgb(243, 238, 238);
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: 0;
+    height: 2px;
+    background: rgb(245, 242, 242);
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width:100%;
+}
+
+.logo {
+    font-size:32px;
+    color:#ffff;
+    font-weight:700;
+    left: 100;
+}
